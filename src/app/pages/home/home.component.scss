@@ -1,0 +1,25 @@
+mat-card {
+  display: block;
+  width: 90%;
+  background: var(--background-color);
+  margin:4rem;
+  padding: 1rem;
+  box-shadow:  0 0 4rem var(--primary-color) ;
+}
+
+::ng-deep mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+mat-card-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+}
+
+mat-card-subtitle{
+  color: var(--primary-color)
+}

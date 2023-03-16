@@ -1,0 +1,24 @@
+h1{
+  text-align: center;
+}
+
+table{
+  // border: 1px solid var(--primary-color);
+  margin: 0.1rem;
+}
+
+th{
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: (--primary-color);
+}
+
+td {
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: (--primary-color);
+}
+
+

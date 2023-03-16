@@ -1,0 +1,39 @@
+<h2>Ng If</h2>
+<div *ngIf="isLogged; else login">
+  <p>Bem-vindo, usuário!</p>
+</div>
+
+<div *ngIf="!isLogged">
+  <p>Você está deslogado</p>
+</div>
+
+<ng-template #login>
+  <div>
+    <p>Por favor, faça login para acessar esta página.</p>
+  </div>
+</ng-template>
+
+
+
+
+<h2> Switch Case</h2>
+<div [ngSwitch]="isLogged">
+  <div *ngSwitchCase="true">Usuário Logado</div>
+  <div *ngSwitchCase="false">Usuario deslogado</div>
+  <div *ngSwitchDefault>O valor informado não é booleano</div>
+</div>
+
+<h2>Ng For</h2>
+
+
+<ul>
+  <li *ngFor="let item of listTimes; let i = index">
+    {{ i }} - {{item.nome}}
+  </li>
+</ul>
+
+
+
+
+
+

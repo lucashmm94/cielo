@@ -1,0 +1,64 @@
+form {
+  width: 100%;
+
+
+}
+
+.font-red{
+ color: red;
+}
+
+label {
+  display: block; /* Fazer com que a label ocupe toda a linha */
+  font-size: 1.2rem; /* Definir um tamanho de fonte */
+  font-weight: bold; /* Definir um peso de fonte */
+  margin-bottom: 0.5rem;
+}
+
+div{
+  margin: 1rem;
+}
+
+.nome_email:nth-child(1){
+  margin-bottom: 4rem;
+
+}
+
+select {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: var(--second-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+  height: 3rem;
+  width: 26rem;
+}
+
+input {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: var(--second-color);
+  border: 2px solid var(--primary-color); /* Adicionar uma borda */
+  border-radius: 1rem; /* Adicionar um raio de borda */
+ /* Definir um tamanho de fonte */
+  padding: 0.5rem; /* Adicionar preenchimento interno */
+}
+
+
+input:focus {
+  box-shadow: 0 0 3rem var(--primary-color) /* Adicionar uma sombra ao redor do input quando está em foco */
+}
+
+
+button{
+  font-size: 1.5rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin-left: 1rem;
+  width: 26rem;
+  border-radius: 1rem;
+  border: 1px solid var(--second-color);
+  background-color: var(--primary-color);
+  color: var(--second-color);
+}
+

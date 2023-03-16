@@ -1,4 +1,6 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
+
+/* Em resumo, o arquivo "tsconfig.app.json" é usado pelo Angular para configurar e personalizar a compilação de código TypeScript para JavaScript, de acordo com as necessidades do aplicativo */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {

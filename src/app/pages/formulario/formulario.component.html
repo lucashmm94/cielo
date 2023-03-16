@@ -1,0 +1,69 @@
+<form [formGroup]="formulario">
+
+  <h1>Formulário</h1>
+  <div class="nome_email">
+    <label for="nome">Nome: </label>
+    <input formControlName="nome" id="nome" [ngClass]="aplicarCssError('nome')" />
+    <p *ngIf="verificaValidTouched('nome')" class="font-red">O nome é inválido</p>
+
+
+    <label for="email">Email: </label>
+    <input formControlName="email" id="email" [ngClass]="aplicarCssError('email')" />
+    <p *ngIf="verificaValidTouched('email')" class="font-red">O email é inválido</p>
+  </div>
+
+
+  <div formGroupName="endereco">
+
+    <label for="cep">Cep: </label>
+    <input formControlName="cep" id="cep" [ngClass]="aplicarCssError('endereco.cep')" />
+    <p *ngIf="verificaValidTouched('endereco.cep')" class="font-red">O cep é inválido</p>
+
+    <label for="rua">Rua: </label>
+    <input formControlName="rua" id="rua" [ngClass]="aplicarCssError('endereco.rua')" />
+    <p *ngIf="verificaValidTouched('endereco.rua')" class="font-red">A rua é inválido</p>
+
+    <label for="numero">Numero: </label>
+    <input formControlName="numero" id="numero" [ngClass]="aplicarCssError('endereco.numero')" />
+    <p *ngIf="verificaValidTouched('endereco.numero')" class="font-red">O número é inválido</p>
+
+    <label for="bairro">Bairro: </label>
+    <input formControlName="bairro" id="bairro" [ngClass]="aplicarCssError('endereco.bairro')" />
+    <p *ngIf="verificaValidTouched('endereco.bairro')" class="font-red">O bairro inválido</p>
+
+    <label for="estado">Estado: </label>
+    <!-- Select pegando o valor de uma string -->
+    <select formControlName="estado" id="estado">
+      <option *ngFor="let estado of listEstados$ | async" [value]="estado.sigla">{{estado.nome}}</option>
+    </select>
+    <p *ngIf="verificaValidTouched('endereco.estado')" class="font-red">O estado é inválido</p>
+  </div>
+
+  <div>
+    <label for="cargo">Cargo: </label>
+    <!-- Select pegando o valor de um objeto -->
+    <select formControlName="cargo" id="cargo" [compareWith]="compararCargos">
+      <option *ngFor="let cargo of cargos" [ngValue]="cargo">{{cargo.desc}}</option>
+    </select>
+    <p *ngIf="verificaValidTouched('cargo')" class="font-red">O cargo é inválido</p>
+  </div>
+
+
+
+
+  <!-- <div>
+
+
+
+    <label *ngFor="let item of newsLetterOp">
+      <input type="radio" [value]="item.valor" formControlName="newsLetter">{{item.desc}}
+    </label>
+    <p *ngIf="verificaValidTouched('endereco.estado')" class="font-red">A rua é inválido</p>
+  </div> -->
+
+
+  <!-- <button (click)="setarCargo()">Cargo</button> -->
+  <button type="submit" (click)="enviar()">Enviar</button>
+
+
+</form>

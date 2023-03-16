@@ -1,0 +1,27 @@
+
+
+
+.container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: var(--primary-color);
+
+
+  & button{
+  width: 14rem;
+  height: 5rem;
+  border: 1px var(--primary-color);
+  box-shadow: 0 0 2rem ;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: radial-gradient(var(--second-color));
+  }
+}
+
+

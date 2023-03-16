@@ -1,0 +1,67 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav" mode="side"
+  opened fixedInViewport="true" fixedTopGap="100">
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/">
+        <i class="material-icons black">
+          home
+        </i>
+        <span class="black">Início</span>
+      </a>
+
+      <a mat-list-item routerLink="/life-cycle">
+        <i class="material-icons black">
+          change_circle
+        </i>
+        <span class="black">Ciclo de vida</span>
+      </a>
+
+      <a mat-list-item routerLink="/data-binding">
+        <i class="material-icons black">
+          swap_horiz
+        </i>
+        <span class="black">Data Binding</span>
+      </a>
+
+      <a mat-list-item routerLink="/diretivas">
+        <i class="material-icons black">
+          build_circle
+        </i>
+        <span class="black">Diretivas</span>
+      </a>
+
+      <a mat-list-item routerLink="/pipe">
+        <i class="material-icons black">
+          text_rotation_none
+        </i>
+        <span class="black">Pipes</span>
+      </a>
+
+      <a mat-list-item routerLink="/comunicacao">
+        <i class="material-icons black">
+          spatial_tracking
+        </i>
+        <span class="black">Comunicação</span>
+      </a>
+
+      <a mat-list-item routerLink="/formulario-reativo">
+        <i class="material-icons black">
+          assignment
+        </i>
+        <span class="black">Formulários reativos</span>
+      </a>
+
+      <a mat-list-item routerLink="/requisicoes">
+        <i class="material-icons black">
+          file_download
+        </i>
+        <span class="black">Requisições</span>
+      </a>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

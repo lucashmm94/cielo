@@ -1,0 +1,48 @@
+
+:root {
+  font-size: 62.5%;
+  --primary-color: rgb(63, 81, 181,0.7);
+  --second-color: #B8C6DB;
+
+  --background-color: var(--second-color);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  background: var(--background-color);
+  overflow-x: hidden;
+ }
+
+
+ .red {
+  color: rgb(227, 94, 107);
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {
+  width: 2rem; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color); /* cor do fundo da área da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); /* cor da barra de rolagem */
+  border-radius: 1rem; /* raio de borda da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top  , rgb(63, 81, 181,0.7), #B8C6DB, rgb(63, 81, 181,0.7)); /* cor da barra de rolagem ao passar o mouse */
+}

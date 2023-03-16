@@ -1,0 +1,62 @@
+.sidenav{
+  max-width: 24rem;
+  background-image: linear-gradient(to left top, rgb(63, 81, 181,0.7), #B8C6DB);
+}
+
+
+
+ .black {
+  color: #000000;
+}
+
+.sidenav i {
+  padding-right: 1rem;
+}
+
+a:hover{
+  transform: scale(1.1);
+  transition: 0.3s  ease;
+  background-image: linear-gradient( rgb(63, 81, 181, 0.2), #B8C6DB);
+}
+
+a:focus{
+  animation: animacao_filter 2s ;
+  background-color: var(--secondary-color);
+}
+
+
+.content{
+  scroll-behavior: smooth;
+  // overflow-y: ;
+  max-height: 70rem;
+  background-color: #B8C6DB;
+}
+
+
+
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+@keyframes animacao_filter {
+  0% {
+    filter: opacity(0.1);
+  }
+
+  50% {
+    filter: opacity(0.5);
+  }
+
+  100% {
+    filter: opacity(1);
+  }
+}
+

@@ -1,0 +1,21 @@
+<h1>Requisições</h1>
+
+<table>
+  <thead>
+    <th>
+      Código
+    </th>
+    <th>
+      Nome
+    </th>
+    <th>
+      Nome Completo
+    </th>
+  </thead>
+  <tr *ngFor="let item of listBanks">
+    <td>{{ item.code }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.fullName }}</td>
+
+  </tr>
+</table>
